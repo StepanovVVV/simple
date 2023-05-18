@@ -1,0 +1,141 @@
+@import url('reset.css');
+@import url('fonts.css');
+
+:root {
+    --color-1: #000000;
+    --color-2: #F5F6F8;
+    --color-3: rgba(255, 255, 255, 0.6);
+    --color-4: rgba(213, 171, 255, 0.4);
+    --color-5: rgba(213, 171, 255, 0.7);
+    --font-size-1: 29px;
+    --font-size-2: 96px;
+    --font-size-3: 15px;
+    --font-size-4: 14px;
+    --font-size-5: 64px;
+    --font-size-6: 12px;
+    --font-size-7: 40px;
+}
+
+body {
+    font-family: 'Inter';
+    font-size: var(--font-size-3);
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.01em;
+    color: var(--color-1);
+    height: auto;
+}
+
+[class*="__container"] {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.wrapper {
+    height: 91vh;
+    background-color: var(--color-2);
+    margin: 30px;
+    border-radius: 25px;
+}
+
+.page {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 100%;
+}
+
+/* ____________ header ____________ */
+.header__logo {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 11px;
+}
+
+.header__logo>span {
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-size: var(--font-size-1);
+    line-height: 1.12;
+    letter-spacing: 0.135em;
+    text-transform: uppercase;
+    color: var(--color-1);
+    display: inline-block;
+}
+
+/* ____________ hello ____________ */
+.hello {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hello__container {
+    margin: 0 30px;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.hello__img img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.hello__box {
+    max-width: 560px;
+}
+
+.hello__box>p {
+    margin-top: 24px;
+}
+
+.item-box>h1 {
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: var(--font-size-2);
+    line-height: 1;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    row-gap: 16px;
+    column-gap: 10px;
+    margin-top: 29px;
+}
+
+.social__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    padding: 18px 27px;
+    background-color: var(--color-3);
+    border-radius: 14px;
+    transition: all .3s ease 0s;
+}
+
+.social__item:hover {
+    background-color: var(--color-4);
+}
+
+.social__item:active {
+    background-color: var(--color-5);
+}
+
+.social__item>a>span {
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: var(--font-size-4);
+    line-height: 1.21;
+}

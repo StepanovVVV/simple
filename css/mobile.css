@@ -1,0 +1,131 @@
+@media (max-width: 990.98px) {
+    [class*="__container"] {
+        max-width: 750px;
+    }
+
+    .hello__box {
+        max-width: 477px;
+    }
+
+    .hello__container {
+        position: relative;
+        justify-content: flex-end;
+    }
+
+    .hello__img {
+        top: -2%;
+        position: absolute;
+        right: 10px;
+        width: 34%;
+    }
+
+    .item-box>h1 {
+        font-size: var(--font-size-5);
+    }
+
+    .hello__box>p {
+        margin-top: 20px;
+        line-height: 2.14;
+        font-size: var(--font-size-4);
+    }
+
+    .social {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    [class*="__container"] {
+        max-width: none;
+    }
+
+    body {
+        padding-bottom: 20px;
+    }
+
+    .page {
+        position: static;
+        transform: translateX(0);
+    }
+
+    .hello {
+        height: 100%;
+    }
+
+    .hello__container {
+        position: static;
+        flex-direction: column;
+        margin: 0 4px;
+    }
+
+    .hello__img {
+        position: static;
+        width: 60%;
+    }
+
+    .hello__box {
+        max-width: 491px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .social {
+        flex-wrap: wrap;
+    }
+
+    .wrapper {
+        height: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .wrapper {
+        margin: 20px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .header__logo {
+        margin: 18px 0 18px 18px;
+    }
+
+    .hello__box {
+        max-width: 298px;
+        width: 100%;
+    }
+
+    .item-box>h1 {
+        font-size: var(--font-size-7);
+    }
+
+    .hello__box>p {
+        margin-top: 22px;
+        line-height: 2.5;
+        font-size: var(--font-size-6);
+    }
+
+    .social {
+        row-gap: 8px;
+    }
+
+    .social__item {
+        column-gap: 8px;
+    }
+
+    .social>a:nth-child(1),
+    .social>a:nth-child(2) {
+        padding: 18px 12px;
+    }
+}
+
+@media (max-width: 479.98px) {
+    [class*="__container"] {
+        padding: 0 0 18px 0;
+    }
+}
+
+@media (max-width: 310px) {
+    .hello__box {
+        max-width: 190px;
+    }
+}
